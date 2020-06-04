@@ -21,15 +21,18 @@ var _vue = require('vue');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  data: function data() {
+  props: {
+    selectFirst: false,
+    queryParamName: 'q'
+  },
+
+  data () {
     return {
       items: [],
       query: '',
       current: -1,
-      loading: false,
-      selectFirst: false,
-      queryParamName: 'q'
-    };
+      loading: false
+    }
   },
 
 
